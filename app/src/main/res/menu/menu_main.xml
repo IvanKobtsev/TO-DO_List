@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tsu.to_do_list.MainActivity">
+    <item
+        android:id="@+id/action_load"
+        android:orderInCategory="100"
+        android:title="@string/load" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="200"
+        android:title="@string/save" />
+</menu>
