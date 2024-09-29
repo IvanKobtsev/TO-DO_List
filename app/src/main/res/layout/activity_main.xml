@@ -24,6 +24,17 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ListView
+        android:id="@+id/taskListPreviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="start|bottom"
+        app:layout_anchor="@+id/appBarLayout"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:elevation="100dp">
+    </ListView>
+
+    <ListView
         android:id="@+id/taskListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,6 +54,16 @@
         android:contentDescription="@string/tap_to_add_a_task"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/loadingScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/loading"
+        android:visibility="invisible"
+        android:elevation="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/loading" />
 
     <LinearLayout
         android:id="@+id/taskInput"
